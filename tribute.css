@@ -67,7 +67,7 @@ table {
 }
 
 body {
-  background: #5667FF;
+  background: linear-gradient(#C0CDFF, #7490FF);;
   color: #000640;
   font: 400 18px/30px "Palanquin", Helvetica, sans-serif;
 }
@@ -116,6 +116,7 @@ small, figcaption {
   font-size: 14px;
   line-height: 22px;
   text-align: center;
+  padding: 0 15px;
 }
 
 /*
@@ -127,7 +128,6 @@ small, figcaption {
 a {
   color: #0A467F;
   text-decoration: none;
-  border-bottom: 1px solid #0A467F;
 }
 
 a:hover {
@@ -151,10 +151,20 @@ h1, h3 {
   text-align: center;
 }
 
+img,
+figure {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 figure {
   width: 50%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  margin: 20px auto;
+  border: 1px solid #D1D5FF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 5px #42487F;
 }
 
 img, figcaption {
@@ -162,13 +172,19 @@ img, figcaption {
 }
 
 #timeline {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
-  border-top: 2px solid #494D7F;
+  background: linear-gradient(#7490FF, #C0CDFF);
+  border-radius: 15px;
+  box-shadow: inset 3px 3px 5px #3A487F;
 }
 
 .event {
   border-bottom: 1px solid #D1D5FF;
+}
+
+.event:last-child {
+  border-bottom: none;
 }
 
 .event h4,
@@ -179,9 +195,10 @@ small {
 
 article footer {
   display: inline-block;
-  margin: 10px auto;
+  margin: 15px auto 5px;
 }
 
 #site-footer {
   text-align: center;
+  margin-top: 25px;
 }
