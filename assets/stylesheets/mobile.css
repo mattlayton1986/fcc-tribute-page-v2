@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+/* Variables */
+/* Mixins */
+/* Global Styles */
+@media only screen {
+  /* Colors and Typography */
+  body {
+    color: #000640;
+    font: 14px/22px "Source Sans Pro", Helvetica, Arial, sans-serif; }
+
+  h1, h2, h3, strong {
+    font-weight: 700; }
+
+  figcaption,
+  aside,
+  h3,
+  p {
+    padding: 0.5rem 1rem; }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2rem; }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem; }
+
+  h3 {
+    font-size: 1.25rem;
+    font-variant: small-caps;
+    background-color: #c0c5ff; }
+
+  figcaption,
+  small {
+    font-size: 0.75rem;
+    line-height: 1.25rem; }
+
+  .event {
+    border-bottom: 1px solid #d9ddff; }
+
+  footer {
+    background-color: rgba(192, 197, 255, 0.4); }
+
+  /* Links */
+  a {
+    text-decoration: none;
+    color: #0014d9; }
+    a:hover {
+      color: #4052ff; }
+    aside a {
+      text-transform: uppercase;
+      font-weight: 700; }
+
+  /* Spacing and Positioning */
+  header,
+  figure,
+  article,
+  footer {
+    padding: 1rem 0; }
+
+  article,
+  footer {
+    width: 100%;
+    margin: 0 auto; }
+
+  header,
+  figcaption,
+  aside,
+  footer,
+  h3 {
+    text-align: center; }
+
+  figure,
+  img,
+  figcaption {
+    position: relative; }
+
+  figure,
+  figcaption {
+    padding: 1rem 0; }
+
+  .event {
+    padding-bottom: 1rem; }
+
+  img,
+  figcaption {
+    left: calc(50% - 180px); }
+
+  img {
+    max-width: 100%; }
+
+  figcaption {
+    max-width: 360px; } }
+/* Responsive Styles */
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: #c0c5ff;
+    font: 16px/24px "Source Sans Pro", Helvetica, Arial, sans-serif; }
+
+  img,
+  figure {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
+
+  figcaption {
+    top: -6px;
+    border: 1px solid #c0c5ff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; }
+
+  article {
+    max-width: 960px;
+    background-color: #fff;
+    padding: 0 2rem; }
+
+  h3 {
+    text-align: left;
+    background-color: transparent; } }
+
+/*# sourceMappingURL=mobile.css.map */

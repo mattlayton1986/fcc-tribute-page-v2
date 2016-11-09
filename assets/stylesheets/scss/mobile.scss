@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+/* Variables */
+$base-color: #000640;
+$accent-color: lighten($base-color, 75%);
+$font-stack: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+/* Mixins */
+@mixin bold-text {
+  font-weight: 700;
+}
+
+@mixin font-size ($start, $scale) {
+  font-size: $start - $scale;
+}
+
+@mixin vertical-rhythm {
+  padding: 1rem 0;
+}
+
+/* Global Styles */
+
+@media only screen {
+
+  /* Colors and Typography */
+  body {
+    color: $base-color;
+    font: 14px/22px $font-stack;
+  }
+
+  h1, h2, h3, strong {
+    @include bold-text;
+  }
+
+  figcaption,
+  aside,
+  h3,
+  p {
+    padding: 0.5rem 1rem;
+  }
+
+  h1 {
+    @include font-size(2rem, 0.25rem);
+    line-height: 2rem;
+  }
+
+  h2 {
+    @include font-size(2rem, 0.5rem);
+    line-height: 2rem;
+  }
+
+  h3 {
+    @include font-size(2rem, 0.75rem);
+    font-variant: small-caps;
+    background-color: $accent-color;
+  }
+
+  figcaption,
+  small, {
+    @include font-size(2rem, 1.25rem);
+    line-height: 1.25rem;
+  }
+
+  .event {
+    border-bottom: 1px solid lighten($base-color, 80%);
+  }
+
+  footer {
+    background-color: transparentize($accent-color, 0.6);
+  }
+
+  /* Links */
+
+  a {
+    text-decoration: none;
+    color: lighten($base-color, 30%);
+    &:hover {
+      color: lighten($base-color, 50%);
+    }
+    aside & {
+      text-transform: uppercase;
+      @include bold-text;
+    }
+  }
+
+
+  /* Spacing and Positioning */
+
+  header,
+  figure,
+  article,
+  footer {
+    @include vertical-rhythm;
+  }
+
+  article,
+  footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header,
+  figcaption,
+  aside,
+  footer,
+  h3 {
+    text-align: center;
+  }
+
+  figure,
+  img,
+  figcaption {
+    position: relative;
+  }
+
+  figure,
+  figcaption {
+    @include vertical-rhythm;
+  }
+
+  .event {
+    padding-bottom: 1rem;
+  }
+
+  img,
+  figcaption {
+    left: calc(50% - 180px);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    max-width: 360px;
+  }
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    background-color: $accent-color;
+    font: 16px/24px $font-stack;
+  }
+
+  img,
+  figure {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  figcaption {
+    top: -6px;
+    border: 1px solid $accent-color;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  article {
+    max-width: 960px;
+    background-color: #fff;
+    padding: 0 2rem;
+  }
+
+  h3 {
+    text-align: left;
+    background-color: transparent;
+  }
+}
