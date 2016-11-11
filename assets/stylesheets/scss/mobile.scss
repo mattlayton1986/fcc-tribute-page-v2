@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 
 /* Variables */
-$base-color: #000640;
+$base-color: #002838;
 $accent-color: lighten($base-color, 75%);
 $font-stack: "Source Sans Pro", Helvetica, Arial, sans-serif;
 
@@ -171,5 +171,39 @@ $font-stack: "Source Sans Pro", Helvetica, Arial, sans-serif;
   h3 {
     text-align: left;
     background-color: transparent;
+  }
+}
+
+@media only print {
+  body, a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  header {
+    margin-bottom: 1em;
+  }
+
+  footer {
+    font-size: 0.75em;
+    margin-top: 1em;
+  }
+
+  .event {
+    margin: 0.5em 0;
+  }
+
+  h1, h2, h3, p {
+    display: inline;
+  }
+
+  h1, h2, h3 {
+    font-weight: bold;
+    padding-right: 1em;
+  }
+
+  figure,
+  small {
+    display: none;
   }
 }
